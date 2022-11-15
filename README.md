@@ -25,6 +25,7 @@ const rename = require('gulp-rename');
 ```
 
 #### HTML
+```
 function html() {
   return src('src/*.pug')
   .pipe(pug({pretty: true}))
@@ -32,8 +33,10 @@ function html() {
 }
 
 exports.html = html;
+```
 
 #### PHP
+```
 function php() {
   return src('src/*.pug')
   .pipe(pug({pretty: true}))
@@ -42,8 +45,10 @@ function php() {
 }
 
 exports.php = php;
+```
 
 #### SASS
+```
 function css() {
   return src('src/scss/*.scss')
   .pipe(sass().on('error', sass.logError))
@@ -51,8 +56,10 @@ function css() {
 }
 
 exports.css = css;
+```
 
 #### JAVASCRIPT
+```
 function js() {
   return src('src/js/*.js')
   .pipe(concat('scripts.js'))
@@ -60,11 +67,14 @@ function js() {
 };
 
 exports.js = js;
+```
 
 #### COMPILADOR POR DEFAULT
+```
 exports.default = function() {
   watch('src/scss/*.scss', css);
   watch('src/*.pug', php);
   // watch('src/*.pug', html);
   watch('src/js/*.js', js);
 }
+```
