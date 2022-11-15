@@ -15,11 +15,12 @@
 - npm install --save-dev gulp-image (IMAGES)
 
 ### Creamos el archivo gulpfile.js donde estara todas las dependencias
-const {src, dest, watch} = require('gulp');
-const pug = require('gulp-pug');
-const sass = require('gulp-sass')(require('sass'));
-const concat = require('gulp-concat');
-const rename = require('gulp-rename');
+
+``const {src, dest, watch} = require('gulp');``
+``const pug = require('gulp-pug');``
+``const sass = require('gulp-sass')(require('sass'));``
+``const concat = require('gulp-concat');``
+``const rename = require('gulp-rename');``
 
 #### HTML
 function html() {
