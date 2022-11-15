@@ -4,7 +4,7 @@
 - npm install -g sass
 - npm install -g windows-build-tools (Para las imágenes)
 
-## Para crear el package.json
+## Para iniciar el proyecto con el package.json
 - npm init -y
 
 ## Instalar de forma local( proyecto )
